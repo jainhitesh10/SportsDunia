@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/socket.js" defer></script>
+    <script src="js/register.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form id="registrationForm">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="referralCode">Referral Code (optional):</label>
+                <input type="text" id="referralCode" name="referralCode">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <div id="responseMessage"></div>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+        <p><a href="purchase.html">Make a Purchase</a></p>
+        <p><a href="earnings.html">View Earnings</a></p>
+    </div>
+</body>
+</html>
