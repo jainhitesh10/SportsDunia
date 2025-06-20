@@ -84,17 +84,17 @@ A scalable Node.js backend for a multi-level referral and earning system with re
 ## API Endpoints
 
 ### User Registration
-- **POST** `/api/register`
+- **POST** `/register`
   - Body: `{ "username": "string", "referralCode": "string (optional)" }`
   - Registers a new user. If a referral code is provided, links the user to the referrer (max 8 direct referrals).
 
 ### Make a Purchase
-- **POST** `/api/purchase`
+- **POST** `/purchase`
   - Body: `{ "userId": "string", "amount": number }`
   - Distributes profit up the referral chain if amount > 1000Rs.
 
 ### Get Earnings Report
-- **GET** `/api/earnings?userId=...`
+- **GET** `/earnings?userId=...`
   - Returns all earnings for the given user.
 
 ---
